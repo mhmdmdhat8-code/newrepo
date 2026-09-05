@@ -7,17 +7,8 @@ namespace asigment__1
         static void Main(string[] args)
         {
             #region Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
-            // هعمل نسخة من الكتاب واملي بيانتها 
-            Book mybook = new Book();
-            mybook.title = "C# Programming";
-            mybook.page = 464;
-            // هخزن النسخة دي جوه متغير من نوع object 
-            Object objbook = mybook;
-            // هستخدم الاربع دوال الاساسية المورورثين من الاب واعملهم overrite
-            WriteLine(objbook.ToString());
-            WriteLine(objbook.Equals(objbook));
-            WriteLine(objbook.GetHashCode());
-            WriteLine(objbook.GetType());
+            //النقطة الرابعه الخطأ في علامات التنصيص لان النوع int +الخطأ هنا نوعه كومبايلر تايم لأنه حصل وقت كتابة الكود
+            int pages = 464;
             #endregion
 
         }
