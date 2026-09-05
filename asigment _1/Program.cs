@@ -6,11 +6,25 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
-            //النقطة الرابعه الخطأ في علامات التنصيص لان النوع int +الخطأ هنا نوعه كومبايلر تايم لأنه حصل وقت كتابة الكود
-            int pages = 464;
-            #endregion
+            #region Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                // divice 10 by 0 
+                int num = 10;
+                int zero = 0;
+                int result = num / zero;
+            }
 
+            catch (Exception)
+            {
+                WriteLine("Cannot divide by zero");
+            }
+
+            finally
+            {
+                WriteLine("done");
+            }
+            #endregion
         }
 
 
