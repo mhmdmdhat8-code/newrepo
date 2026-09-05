@@ -6,17 +6,20 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
-            int pagesNum2 = 464;
-
-            // 1. نحوله لنص بـ ToString()
-            string textPages = pagesNum2.ToString();
-
-            // 2. نطبع نوع المتغير بـ GetType() عشان نتأكد
-            WriteLine(textPages.GetType());
-            #endregion
+            #region Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            //(Boxing and Unboxing)
+            // the first Boxing  وهو تغليف النوع او تحويله من نوع مثلا انتجر في ال ستاك الي الهيب في الاوبجيكت
+            int copies = 100;
+            object boxedCopies = copies;
+            // the seconed un Boxing
+            int unboxedCopies = (int)boxedCopies;
+            WriteLine(boxedCopies);
+            WriteLine(unboxedCopies);
         }
-
-
+            #endregion
     }
-}
+
+
+    } 
+
+
