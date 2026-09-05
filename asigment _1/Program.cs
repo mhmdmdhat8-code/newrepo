@@ -13,8 +13,11 @@ namespace asigment__1
             mybook.page = 464;
             // هخزن النسخة دي جوه متغير من نوع object 
             Object objbook = mybook;
-            // هنطبع المتغير 
-            WriteLine(objbook);
+            // هستخدم الاربع دوال الاساسية المورورثين من الاب واعملهم overrite
+            WriteLine(objbook.ToString());
+            WriteLine(objbook.Equals(objbook));
+            WriteLine(objbook.GetHashCode());
+            WriteLine(objbook.GetType());
             #endregion
 
         }
