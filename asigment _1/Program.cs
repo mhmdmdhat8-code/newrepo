@@ -6,17 +6,16 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string badText = "abc";
-            int result;
-            bool isSuccess = int.TryParse(badText, out result);
+            #region Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+            int pagesNum2 = 464;
 
-            if (isSuccess == false)
-            {
-                WriteLine("Invalid number");
-            }
+            // 1. نحوله لنص بـ ToString()
+            string textPages = pagesNum2.ToString();
+
+            // 2. نطبع نوع المتغير بـ GetType() عشان نتأكد
+            WriteLine(textPages.GetType());
             #endregion
-            }
+        }
 
 
     }
