@@ -6,9 +6,10 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            double doublePages = pages; 
+            #region Declare a double price = 49.99; then convert it into an int using a cast.
+            double price = 4.99;
+            int intprice = (int)price;
+            WriteLine(intprice);
             #endregion
         }
 
