@@ -6,12 +6,17 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given string pagesText = "464";, convert it into an int using the Convert class.
-            double price = 4.99;
-            int intprice = (int)price;
-            WriteLine(intprice);
+            #region Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string badText = "abc";
+            int result;
+            bool isSuccess = int.TryParse(badText, out result);
+
+            if (isSuccess == false)
+            {
+                WriteLine("Invalid number");
+            }
             #endregion
-        }
+            }
 
 
     }
