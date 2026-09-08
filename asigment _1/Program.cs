@@ -12,15 +12,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than 300, otherwise prints "Short Book".
-            int num = 464;
-            if (num > 300)
+            #region Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is greater than 300 and isAvailable is true.Use the && operator.
+            int pages = 464;
+            bool isAvailable = true;
+            if (pages > 300 && isAvailable)
             {
-                WriteLine("Long Book");
-            }
-            else
-            {
-                WriteLine("Short Book");
+                WriteLine("You can borrow this book");
             }
             #endregion
         }
