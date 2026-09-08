@@ -12,11 +12,11 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,Pages: 464" using the + operator.
+            #region Build the same sentence as above, but using string interpolation ($"...").
             string title = "Clean Code ";
             int pages = 464;
-            string sentence = "book: " + title + ", pages: " + pages;
-            WriteLine(sentence);
+            string interpolation = $"book: {title} , pages: {pages}";
+            WriteLine(interpolation);
             #endregion
 
         }
