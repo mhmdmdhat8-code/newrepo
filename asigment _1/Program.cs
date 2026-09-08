@@ -12,11 +12,11 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("Book List");
-            stringBuilder.Replace("Book List", "Library");
-            WriteLine(stringBuilder.ToString());
+            #region Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,Pages: 464" using the + operator.
+            string title = "Clean Code ";
+            int pages = 464;
+            string sentence = "book: " + title + ", pages: " + pages;
+            WriteLine(sentence);
             #endregion
 
         }
