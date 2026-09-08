@@ -12,13 +12,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Build the same sentence as above, but using string interpolation ($"...").
-            string title = "Clean Code ";
+            #region Build the same sentence again, but using string.Format().
+            string title = "Clean Code";
             int pages = 464;
-            string interpolation = $"book: {title} , pages: {pages}";
-            WriteLine(interpolation);
+            string formattedSentence = string.Format("Book: {0}, Pages: {1}", title, pages);
+            WriteLine(formattedSentence);
             #endregion
-
         }
     }
 }
