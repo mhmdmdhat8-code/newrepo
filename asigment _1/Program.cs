@@ -12,7 +12,7 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the same books array, use a foreach loop to print every book title.
+            #region Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             foreach (string book in books)
             {
@@ -20,10 +20,11 @@ namespace asigment__1
                 {
                     break;
                 }
-
                 WriteLine(book);
-            #endregion
+
             }
+            #endregion
+
         }
     }
 }
