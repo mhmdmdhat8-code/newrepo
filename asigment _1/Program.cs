@@ -1,4 +1,10 @@
-﻿using static System.Console;
+﻿using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Channels;
+using static System.Console;
 namespace asigment__1
 {
 
@@ -6,25 +12,13 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
-            // هعمل نسخة من الكتاب واملي بيانتها 
-            Book mybook = new Book();
-            mybook.title = "C# Programming";
-            mybook.page = 464;
-            // هخزن النسخة دي جوه متغير من نوع object 
-            Object objbook = mybook;
-            // هنطبع المتغير 
-            WriteLine(objbook);
-            // هستخدم الاربع دوال الاساسية المورورثين من الاب واعملهم overrite
-            WriteLine(objbook.ToString());
-            WriteLine(objbook.Equals(objbook));
-            WriteLine(objbook.GetHashCode());
-            WriteLine(objbook.GetType());
-
+            #region Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle. Print both title and upperTitle to show that title did not change.
+            string Title = "clean code";
+            string upper_Title = Title.ToUpper();
+            WriteLine(upper_Title);
+            WriteLine(Title);
             #endregion
 
         }
-
-
     }
 }
