@@ -12,12 +12,14 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code.
-            string[] book = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < book.Length; i++)
+            #region Using the same books array, use a while loop to print every book title.
+            int count = 0;
+            do
             {
-                WriteLine(book[i]);
+                WriteLine("Checking book...");
+                count++;
             }
+            while (count < 3);
             #endregion
         }
     }
