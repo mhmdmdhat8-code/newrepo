@@ -12,10 +12,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a variable sizeLabel(same rule as question 8: long if pages > 300).
-            int pages = 464;
-            string sizeLabel = (pages > 300) ? "Long Book" : "Short Book";
-            WriteLine(sizeLabel);
+            #region Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code.
+            string[] book = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for (int i = 0; i < book.Length; i++)
+            {
+                WriteLine(book[i]);
+            }
             #endregion
         }
     }
