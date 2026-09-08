@@ -12,11 +12,10 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle. Print both title and upperTitle to show that title did not change.
-            string Title = "clean code";
-            string upper_Title = Title.ToUpper();
-            WriteLine(upper_Title);
-            WriteLine(Title);
+            #region Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals() to check if they point to the same object in memory.
+            string name = "Clean Code";
+            string name2 = "Clean Code";
+            WriteLine(ReferenceEquals(name, name2));
             #endregion
 
         }
