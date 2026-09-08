@@ -12,14 +12,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the same books array, use a while loop to print every book title.
-            int count = 0;
-            do
+            #region Write a do-while loop that prints "Checking book..." exactly 3 times.
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            foreach (string book in books)
             {
-                WriteLine("Checking book...");
-                count++;
+                Console.WriteLine(book);
             }
-            while (count < 3);
             #endregion
         }
     }
