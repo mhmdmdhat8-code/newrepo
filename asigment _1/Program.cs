@@ -12,11 +12,16 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Build the same sentence again, but using string.Format().
-            string title = "Clean Code";
-            int pages = 464;
-            string formattedSentence = string.Format("Book: {0}, Pages: {1}", title, pages);
-            WriteLine(formattedSentence);
+            #region Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than 300, otherwise prints "Short Book".
+            int num = 464;
+            if (num > 300)
+            {
+                WriteLine("Long Book");
+            }
+            else
+            {
+                WriteLine("Short Book");
+            }
             #endregion
         }
     }
