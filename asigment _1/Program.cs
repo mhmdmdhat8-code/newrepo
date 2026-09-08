@@ -12,19 +12,20 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string book in books)
-            {
-                if (book == "Refactoring")
-                {
-                    break;
-                }
-                WriteLine(book);
+            #region Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,use return to exit the method early instead of printing anything.
 
+            void PrintFirstBook(string[] Books)
+            {
+                if (Books.Length == 0)
+                {
+                    return;
+                }
+                else { WriteLine(Books[0]); }
             }
+            string[] books = { "csharp", "cpp", "java" };
+            PrintFirstBook(books);
             #endregion
 
         }
     }
-}
+    }  
