@@ -12,18 +12,9 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,use return to exit the method early instead of printing anything.
-
-            void PrintFirstBook(string[] Books)
-            {
-                if (Books.Length == 0)
-                {
-                    return;
-                }
-                else { WriteLine(Books[0]); }
-            }
-            string[] books = { "csharp", "cpp", "java" };
-            PrintFirstBook(books);
+            #region Create a one-dimensional array double[] prices with the values 25.5, 40.0, 33.75. Print the second price(index 1).
+            double[] prices = { 25.5, 40.0, 33.75 };
+            WriteLine(prices[1]);
             #endregion
 
         }
