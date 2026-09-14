@@ -13,14 +13,14 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method called PrintWelcomeMessage that takes no parameters and prints "Welcome to the Library!".Call it from Main.
-            PrintWelcomeMessage();
+            #region Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code".
+            PrintBookTitle("Clean Code");
             #endregion
 
         }
-        static void PrintWelcomeMessage()
+        static void PrintBookTitle(string title)
         {
-            Console.WriteLine("Welcome to the Library!");
+            Console.WriteLine("Book title: " + title);
         }
     }
 
