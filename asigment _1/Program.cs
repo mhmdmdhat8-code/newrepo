@@ -12,9 +12,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Create a one-dimensional array double[] prices with the values 25.5, 40.0, 33.75. Print the second price(index 1).
-            double[] prices = { 25.5, 40.0, 33.75 };
-            WriteLine(prices[1]);
+            #region 
+            int[,] shelfCopies =
+            {
+                {3,5},{1,4}
+            };
+            WriteLine(shelfCopies[1, 0]);
             #endregion
 
         }
