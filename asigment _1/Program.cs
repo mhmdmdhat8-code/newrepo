@@ -14,20 +14,37 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length afterward.
-            double[] prices = { 25.5, 40.0 }; 
+            #region Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it and print the price if found Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages.
+
+            if (TryGetPrice("Clean Code", out double price))
+            {
+                Console.WriteLine($"Price: {price}");
+            }
+
+          
+            PrintBookInfo("Clean Code");
 
             
-            ReplaceArray(ref prices);
-
-            Console.WriteLine(prices.Length);
+            PrintBookInfo("Design Patterns", 500);
             #endregion
 
         }
 
-        static void ReplaceArray(ref double[] prices)
+        static bool TryGetPrice(string title, out double price)
         {
-            prices = new double[] { 10.0, 12.5, 15.0 };
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+
+            price = 0;
+            return false;
+        }
+
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
 
 
