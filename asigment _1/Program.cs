@@ -14,17 +14,20 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
-            int pages = 400;
-            AddBonusPages(pages);
-            WriteLine(pages);
-            //طبعت 400 
-            //لأن C# قامت بتمرير المتغير Pass by Value. الدالة استلمت نسخة من الرقم (400) وزودت عليها 50 فبقت (450) جوه نطاق الدالة فقط، لكن المتغير الأصل pages جوه الـ Main يظل كما هو دون تغيير
+            #region Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
+            double[] prices = { 25.5, 40.0 };
+
+            // استدعاء الدالة وتمرير المصفوفة
+            ApplyDiscount(prices);
+
+            // طباعة السعر الأول بعد التعديل
+            Console.WriteLine(prices[0]);
+            // Why>> لأن المصفوفات Reference Types. الدالة استلمت العنوان اللي بيشاور على مكان المصفوفة في الذاكرة، والتعديل اللي حصل على prices[0] غير في المصفوفة الحقيقية.
             #endregion
         }
-        static void AddBonusPages(int pages)
+        static void ApplyDiscount(double[] prices)
         {
-            pages += 50; // أو pages = pages + 50;
+            prices[0] -= 5; // تخصم 5 من أول عنصر
         }
     }
 
