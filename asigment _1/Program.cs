@@ -14,21 +14,20 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
-            double[] prices = { 25.5, 40.0 };
+            #region Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward. How is the result different from question 5 ?
+             int pages = 400;
 
-            // استدعاء الدالة وتمرير المصفوفة
-            ApplyDiscount(prices);
+            AddBonusPagesByRef(ref pages);
 
-            // طباعة السعر الأول بعد التعديل
-            Console.WriteLine(prices[0]);
-            // Why>> لأن المصفوفات Reference Types. الدالة استلمت العنوان اللي بيشاور على مكان المصفوفة في الذاكرة، والتعديل اللي حصل على prices[0] غير في المصفوفة الحقيقية.
+            Console.WriteLine(pages);
+
+        }
             #endregion
-        }
-        static void ApplyDiscount(double[] prices)
+    
+        static void AddBonusPagesByRef(ref int pages)
         {
-            prices[0] -= 5; // تخصم 5 من أول عنصر
+            pages += 50;
         }
-    }
 
-    }  
+    }
+}
