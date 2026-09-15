@@ -16,16 +16,19 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
-
-            PrintBookInfo(pages: 450, title: "Clean Code");
+            #region Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles.
+            PrintAllTitles("Clean Code", "Design Patterns", "C# in Depth");
             #endregion
 
         }
 
-        static void PrintBookInfo(string title, int pages = 300)
+        static void PrintAllTitles(params string[] titles)
         {
-            Console.WriteLine($"Title: {title}, Pages: {pages}");
+            
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
         }
 
 
