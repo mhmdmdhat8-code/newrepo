@@ -1,4 +1,6 @@
 ﻿using System.Drawing;
+using System.Reflection;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics.Arm;
 using System.Runtime.Intrinsics.X86;
@@ -14,32 +16,11 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it and print the price if found Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages.
+            #region Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
 
-            if (TryGetPrice("Clean Code", out double price))
-            {
-                Console.WriteLine($"Price: {price}");
-            }
-
-          
-            PrintBookInfo("Clean Code");
-
-            
-            PrintBookInfo("Design Patterns", 500);
+            PrintBookInfo(pages: 450, title: "Clean Code");
             #endregion
 
-        }
-
-        static bool TryGetPrice(string title, out double price)
-        {
-            if (title == "Clean Code")
-            {
-                price = 25.5;
-                return true;
-            }
-
-            price = 0;
-            return false;
         }
 
         static void PrintBookInfo(string title, int pages = 300)
