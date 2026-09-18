@@ -16,12 +16,12 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Add a private string password = "secret"; field to a Book class. Try to print it from Main (outside the class). What happens, and why?
-            Book mybook =new Book();
-            WriteLine(mybook.password);
+            #region Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile? Why?
+                        Book mybook = new Book();
+            WriteLine($"Copies in stock: {mybook.copiesInStock}");
 
-            // what happend: لم يتم تشغيل البرنامج وظهر ايرور كومبيلر 
-            // why: لتطبيق مبدأ  Encapsulation
+            // does it compile? yes 
+            // why: لأن كلمة internal بتسمح لك بالوصول للمتغير داخل المشروع الواحد 
             #endregion
 
         }
@@ -30,6 +30,7 @@ namespace asigment__1
         {
             public string Title = "Clean Code";
             private string password = "secret";
+            internal int copiesInStock = 5;
         }
 
 
