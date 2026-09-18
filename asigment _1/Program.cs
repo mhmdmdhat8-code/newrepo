@@ -16,19 +16,20 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles.
-            PrintAllTitles("Clean Code", "Design Patterns", "C# in Depth");
+            #region Add a private string password = "secret"; field to a Book class. Try to print it from Main (outside the class). What happens, and why?
+            Book mybook =new Book();
+            WriteLine(mybook.password);
+
+            // what happend: لم يتم تشغيل البرنامج وظهر ايرور كومبيلر 
+            // why: لتطبيق مبدأ  Encapsulation
             #endregion
 
         }
 
-        static void PrintAllTitles(params string[] titles)
+        class Book
         {
-            
-            foreach (string title in titles)
-            {
-                Console.WriteLine(title);
-            }
+            public string Title = "Clean Code";
+            private string password = "secret";
         }
 
 
