@@ -17,9 +17,9 @@ namespace asigment__1
         static void Main(string[] args)
         {
             #region Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
-            Genre genre = Genre.Fiction;
-            string genreName = genre.ToString();
-            WriteLine($"Genre as string: {genreName}");
+            string genreText = "Science";
+            Genre parsedGenre = (Genre)Enum.Parse(typeof(Genre), genreText);
+            WriteLine($"Parsed Genre: {parsedGenre}");
             #endregion
 
         }
