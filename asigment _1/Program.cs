@@ -16,22 +16,19 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, assign it Genre.Science, and print it.
-            Book myBook = new Book();
+            #region Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
+            int fictionVal = (int)Genre.Fiction;
+            int nonFictionVal = (int)Genre.NonFiction;
+            int scienceVal = (int)Genre.Science;
 
-            myBook.Title = "Quantum Physics";
-            myBook.BookGenre = Genre.Science;
-            WriteLine($"Book: {myBook.Title}, Genre: {myBook.BookGenre}");
+            Console.WriteLine($"Fiction int value: {fictionVal}");
+            Console.WriteLine($"NonFiction int value: {nonFictionVal}");
+            Console.WriteLine($"Science int value: {scienceVal}");
             #endregion
 
         }
 
-        class Book
-        {
-            public string Title { get; set; }
-            public Genre BookGenre { get; set; }
-
-        }
+       
 
         enum Genre
         {
