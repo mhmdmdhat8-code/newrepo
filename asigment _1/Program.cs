@@ -16,14 +16,10 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
-            int fictionVal = (int)Genre.Fiction;
-            int nonFictionVal = (int)Genre.NonFiction;
-            int scienceVal = (int)Genre.Science;
-
-            Console.WriteLine($"Fiction int value: {fictionVal}");
-            Console.WriteLine($"NonFiction int value: {nonFictionVal}");
-            Console.WriteLine($"Science int value: {scienceVal}");
+            #region Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            int genrenum = 1;
+            Genre selectedGenre = (Genre)genrenum;
+            WriteLine($"The genre for number {genrenum} is: {selectedGenre}");
             #endregion
 
         }
