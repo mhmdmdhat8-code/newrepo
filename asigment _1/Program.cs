@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Microsoft.VisualBasic;
+using System.Drawing;
 using System.Reflection;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
@@ -16,10 +17,17 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
-            string genreText = "Science";
-            Genre parsedGenre = (Genre)Enum.Parse(typeof(Genre), genreText);
-            WriteLine($"Parsed Genre: {parsedGenre}");
+            #region Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to attempt the conversion.Print "Unknown genre" if it fails.
+            string genreText = "Mystery";
+            if (Enum.TryParse(genreText, out Genre resultGenre))
+            {
+                WriteLine($"Genre found: {resultGenre}");
+            }
+            else
+            {
+                // عند فشل التحويل (لأن Mystery غير موجودة في الـ Enum)
+                WriteLine("Unknown genre");
+            }
             #endregion
 
         }
