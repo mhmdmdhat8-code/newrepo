@@ -16,10 +16,10 @@ namespace asigment__1
     {
         static void Main(string[] args)
         {
-            #region Given int genreNumber = 1;, cast it into a Genre value and print the result.
-            int genrenum = 1;
-            Genre selectedGenre = (Genre)genrenum;
-            WriteLine($"The genre for number {genrenum} is: {selectedGenre}");
+            #region Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            Genre genre = Genre.Fiction;
+            string genreName = genre.ToString();
+            WriteLine($"Genre as string: {genreName}");
             #endregion
 
         }
